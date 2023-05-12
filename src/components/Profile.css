@@ -1,0 +1,74 @@
+.profile-bar {
+    height: 30px;
+    background-color: var(--tertiary);
+    border-top: 2px solid var(--fontPrimary);
+    margin-bottom: 4%;
+
+}
+
+.profile-image {
+    z-index: 100;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10%;
+
+}
+
+img {
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+    width: 20%;
+    box-shadow: 0 2px 30px 20px rgba(0, 0, 0, 0.4);
+    transition-duration: 1000ms;
+
+
+
+
+}
+
+img:hover {
+    width: 22%;
+    transition-duration: 300ms;
+    box-shadow: 0 2px 50px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    img {
+        width: 18%;
+        box-shadow: 0 10px 30px 20px rgba(0, 0, 0, 0.5);
+        border: 10px solid var(--primary);
+    }
+
+    img:hover {
+        width: 20%;
+        box-shadow: 0 10px 50px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-bar {
+        border-top: 7px solid var(--fontPrimary);
+    }
+
+}
+
+@media (min-width: 1400px) {
+    img {
+        width: 20%;
+        box-shadow: 0 20px 30px 20px rgba(0, 0, 0, 0.6);
+        border: 10px solid var(--primary);
+    }
+
+    img:hover {
+        width: 22%;
+        box-shadow: 0 20px 50px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    
+    .profile-bar {
+        border-top: 7px solid var(--fontPrimary);
+    }
+
+}

@@ -1,0 +1,95 @@
+.titlePage-container {
+    border-top: 2px solid var(--fontPrimary);
+    border-bottom: 15px solid var(--tertiary);
+    padding: 5%;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 8% 10% 8% 10%;
+    margin: 30px 0 30px 0;
+}
+
+
+.titlePage-title {
+    color: var(--subColor2);
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-size: 30px;
+    writing-mode: horizontal-tb;
+    transform: scale(1);
+    text-decoration-line: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 10px;
+    transition-duration: 1000ms;
+    letter-spacing: 10px;
+}
+
+.titlePage-title:hover {
+    font-size: 40px;
+    text-underline-offset: 15px;
+    transition-duration: 1000ms;
+
+}
+
+.titlePage-paragraph {
+    color: var(--fontPrimary);
+    font-family: var(--font1);
+    font-size: 12px;
+    text-indent: 50px;
+}
+
+@media (min-width: 768px) {
+    .titlePage-container {
+        align-items: start;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .titlePage-title {
+        font-size: 60px;
+        letter-spacing: 0px;
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+    }
+
+    .titlePage-paragraph {
+        font-size: 15px;
+    }
+
+    .titlePage-title:hover {
+        font-size: 75px;
+        text-underline-offset: 15px;
+        transition-duration: 1000ms;
+
+    }
+}
+
+@media (min-width: 1400px) {
+
+    .titlePage-container {
+        align-items: start;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .titlePage-title {
+        font-size: 80px;
+        letter-spacing: 0px;
+        writing-mode: vertical-rl;
+        transform: scale(-1);
+    }
+
+    .titlePage-paragraph {
+        font-size: 20px;
+    }
+
+    .titlePage-title:hover {
+        font-size: 90px;
+        text-underline-offset: 20px;
+        transition-duration: 1000ms;
+
+    }
+
+}

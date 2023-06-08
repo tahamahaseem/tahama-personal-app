@@ -17,7 +17,6 @@ https://github.com/tahamahaseem/tahama-personal-app/assets/52297139/aab0ea32-7d7
 - **React.js**: The project is built using React.js to create reusable components and manage the application's state.
 - **HTML5/CSS3**: The website is structured using semantic HTML5 tags and styled with CSS3 to ensure a clean and responsive design.
 - **JavaScript**: JavaScript is used to add interactivity and enhance the user experience.
-- **Git**: Version control system Git is used for tracking changes and collaborating with others.
 
 ## Installation
 

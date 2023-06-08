@@ -2,6 +2,9 @@
 
 This project is a personal portfolio website built using React.js. It serves as a showcase of my skills, projects, and experience. The portfolio website is designed to provide visitors with an overview of my background, highlight my work, and offer a way to get in touch with me.
 
+https://github.com/tahamahaseem/tahama-personal-app/assets/52297139/aab0ea32-7d7d-4915-8321-9dbcf9321be6
+
+
 ## Features
 
 - **Home**: A landing page that introduces myself and provides a brief overview of my skills and interests.

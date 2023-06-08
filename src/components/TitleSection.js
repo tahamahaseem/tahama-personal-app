@@ -3,7 +3,7 @@ import video from "../assets/video1.mp4"
 
 import "./TitleSection.css"
 import { Button } from "./Button";
-import { SidebarData } from "./SidebarData";
+import { PageData } from "./PageData";
 import { Link } from 'react-router-dom';
 
 export const TitleSection = () => {
@@ -28,7 +28,7 @@ export const TitleSection = () => {
             <h1 className="titleSection-sub-text"> MY NAME IS</h1>
             <h1 className="titleSection-name-text">TAHAMA HASEEM</h1>
             {showContent && <div className="titleSection-button-container">
-                {SidebarData.map((item, index) => {
+                {PageData.map((item, index) => {
                     return item.path != "/" && <Button text={item.title} path={item.path}></Button>
                 })}
             </div>}

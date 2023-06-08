@@ -2,11 +2,15 @@ import React, { useState } from "react";
 import './Button.css';
 import { Link } from "react-router-dom";
 
-import useSound from "use-sound";
 import sound from '../assets/select.mp3';
 
 export const Button = (children) => {
-    const [playSound] = useSound(sound,{ volume: 0.2 });
+    
+    const playSound = () => {
+        const audio = new Audio(sound);
+        audio.volume = 0.05;
+        audio.play();
+      };
 
     return (
         <button onMouseEnter={playSound} className="button-main">

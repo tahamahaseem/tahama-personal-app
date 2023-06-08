@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from './Button.js';
-import { SidebarData } from './SidebarData.js';
+import { PageData } from './PageData.js';
 
 import useSound from "use-sound";
 import sound from '../assets/select.mp3';
@@ -19,7 +19,11 @@ function NavigationBar() {
     const [sidebar, viewSidebar] = useState(false);
     const [showContent, setContentView] = useState(true);
 
-    const [playSound] = useSound(sound,{ volume: 0.2 });
+    const playSound = () => {
+        const audio = new Audio(sound);
+        audio.volume = 0.05;
+        audio.play();
+      };
 
 
     const handleToggle = () => {
@@ -44,6 +48,7 @@ function NavigationBar() {
 
     return (
         <>
+            {<div className={sidebar ? 'nav-overlay active' : 'nav-overlay'}/>}
             <div className='nav-logo-container'>
 
                 {<div onMouseEnter={playSound} onClick={handleToggle}>
@@ -54,10 +59,10 @@ function NavigationBar() {
                     <Link onMouseEnter={playSound} to="https://www.linkedin.com/in/tahama-haseem-a5b239192/" target="_blank" className='nav-logo-top-icons'>
                         <FontAwesomeIcon icon={brandIcons.faLinkedin} />
                     </Link>
-                    <Link  onMouseEnter={playSound} to="https://www.instagram.com/tihamahhaseem/" target="_blank" className='nav-logo-top-icons'>
+                    <Link onMouseEnter={playSound} to="https://www.instagram.com/tihamahhaseem/" target="_blank" className='nav-logo-top-icons'>
                         <FontAwesomeIcon icon={brandIcons.faInstagram} />
                     </Link>
-                    <Link onMouseEnter={playSound} to="https://github.com/tahamahaseem" target="_blank"className='nav-logo-top-icons'>
+                    <Link onMouseEnter={playSound} to="https://github.com/tahamahaseem" target="_blank" className='nav-logo-top-icons'>
                         <FontAwesomeIcon icon={brandIcons.faGithub} />
                     </Link>
                 </div>
@@ -68,7 +73,7 @@ function NavigationBar() {
                 <div  >
                     <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
                         <ul className='nav-menu-items' >
-                            {SidebarData.map((item,index) => {
+                            {PageData.map((item, index) => {
                                 return (
                                     <li key={index} className="nav-menu-item" >
                                         <Link onMouseEnter={playSound} onClick={resetBar} to={item.path} className={item.style}>{item.title}</Link>

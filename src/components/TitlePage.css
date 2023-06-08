@@ -30,6 +30,7 @@
     font-size: 40px;
     text-underline-offset: 15px;
     transition-duration: 1000ms;
+    text-shadow: 0 0 20px var(--subColor2);
 
 }
 

@@ -7,7 +7,7 @@ https://github.com/tahamahaseem/tahama-personal-app/assets/52297139/aab0ea32-7d7
 
 ## Features
 
-- **Home**: A landing page that introduces myself and provides a brief overview of my skills and interests.
+- **Home**: A landing page that introduces myself and provides a brief overview about me.
 - **Projects**: A section showcasing my notable projects. Each project includes a description, screenshots, and links to live demos or source code repositories.
 - **Skills**: An overview of the programming languages, frameworks, and tools I am proficient in.
 - **Contact**: A contact form and links to my social media profiles, allowing visitors to get in touch with me easily.
